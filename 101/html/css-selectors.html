@@ -1,0 +1,139 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+
+    <style>
+        * {
+            /*  Tüm elementleri seçer */
+        }
+
+        p {
+            /*  Tüm paragraf elementlerini seçer */
+        }
+
+        p,
+        a {
+            /*  Tüm p ve a  elementlerini seçer */
+        }
+
+        div p {
+            /* div etiketi içerisindeki p etiketlerini etkiler */
+        }
+
+        div>p {
+
+            /* parent i div olan p etiketlerini seçer */
+        }
+
+        div+p {
+            /* div den sonra gelen ilk p etiketini etkiler */
+        }
+
+        div~p {
+            /* div den sonra gelen tüm p etiketlerini etkiler */
+        }
+
+        div>p:first-child {
+            /* parent i p etiketlerinden ilkini seçer */
+        }
+
+        div>p:nth-child(3) {
+
+            /* parent i div olan p etiketlerinden 3. sünü seçer */
+        }
+
+        div>p:nth-last-child(3) {
+
+            /* parent i div olan p etiketlerinden sondan 3. sünü seçer */
+        }
+
+        li:nth-child(3n) {
+            /*  list itemlerden 3  ün katı olanları seçer */
+            color: red;
+        }
+
+        li:nth-child(n+4):nth-child(-n+8) {
+            /*  list itemlerden [4,8] arasında olanları seçer. birden fazla şart yazabiliriz */
+            color: red;
+        }
+
+        div[title~="isim"] {
+            color: orange;
+        }
+
+        /* Burada ~= ifadesi ile title özelliği "isim" içeren divlere eriştik. */
+
+        div[class$="test"] {
+            background: yellow;
+        }
+
+        /* Burada $= ifadesi ile class özelliği sonunda "test" içeren divlere eriştik.*/
+        div[class|="test"] {
+            background: yellow;
+        }
+
+        /* Burada |= ifadesi ile class özelliği başında "test" kelimesi içeren divlere eriştik.*/
+        div[class^="test"] {
+            background: yellow;
+        }
+
+        /* Burada ^= ifadesi ile class özelliği başında "test" içeren divlere eriştik.*/
+        div[class*="test"] {
+            background: yellow;
+        }
+
+        /* Burada *= ifadesi ile class özelliği içerisinde "test" kelimesi içeren divlere eriştik.*/
+        div[class*="test" i] {
+            background: yellow;
+        }
+
+        /* Burada *= ifadesi ile class özelliği içerisinde "test" kelimesi içeren divlere eriştik. büyük küçük harf ayırmaz*/
+        p::first-letter {
+            font-size: 20px;
+            color: orange;
+        }
+
+        /*  ::first-letter
+            Blok seviyesinde bir etiketteki ilk harfe CSS uygular. 
+            <span> blok seviyesinde bir etiket olmadığından bu pseudo class uygulanamaz. 
+                ::first-line
+            Blok seviyesinde bir etiketin ilk satırına CSS uygular.
+            attr()  bir etiketin niteliğini css tarafında çekmek için kulllanılır
+            
+            */
+    </style>
+</head>
+
+<body>
+
+    <ul>
+        <li>Lorem.</li>
+        <li>Mollitia.</li>
+        <li>Nemo.</li>
+        <li>Ipsa!</li>
+        <li>Cum!</li>
+        <li>Saepe!</li>
+        <li>Sunt.</li>
+    </ul>
+
+
+    <div title="isim">Lorem, ipsum dolor.</div>
+    <div title="isimler">Lorem, ipsum dolor.</div>
+    <div title="isim ve şehirler">Lorem, ipsum dolor.</div>
+
+
+    <div class="bir_test">Lorem, ipsum dolor.</div>
+    <div class="iki-test">Lorem, ipsum dolor.</div>
+    <div class="uc test">Lorem, ipsum dolor.</div>
+    <div class="dorttest">Lorem, ipsum dolor.</div>
+
+
+    <p>Lorem ipsum dolor sit.</p>
+</body>
+
+</html>

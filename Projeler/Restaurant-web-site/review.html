@@ -1,0 +1,172 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css"
+      integrity="sha512-iecdLmaskl7CVkqkXNQ/ZH/XLlvWZOJyj7Yy7tcenmpD1ypASozpmT/E0iPtmFIB46ZmdtAc9eNBvH0H/ZpiBw=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
+    <title>Restaurant-home-page</title>
+    <link rel="stylesheet" href="styles/style.css" />
+  </head>
+
+  <body>
+    <!--------------header start--------------->
+    <header class="header">
+      <a class="logo" href="#">
+        <img src="./images/logo.png" alt="logo" />
+      </a>
+      <nav class="navbar">
+        <a href="index.html" >Home</a>
+        <a href="about.html" >About</a>
+        <a href="menu.html"  >Menu</a>
+        <a href="products.html">Products</a>
+        <a href="#"class="active">Review</a>
+        <a href="contact.html">Contact</a>
+        <a href="blogs.html">Blogs</a>
+      </nav>
+      <div class="buttons">
+        <button id="search-btn">
+          <i class="fas fa-search"></i>
+        </button>
+        <button id="card-btn">
+          <i class="fa-solid fa-cart-shopping"></i>
+        </button>
+        <button id="menu-btn">
+          <i class="fa-solid fa-bars"></i>
+        </button>
+      </div>
+      <div class="search-form">
+        <input type="text" class="search-input" id="search-box" 
+        placeholder="search here">
+        <i class="fas fa-search"></i>
+      </div>
+      <div class="card-items-container">
+        <div class="card-item">
+          <i class="fas fa-times"></i>
+          <img src="./images/menu-1.png" alt="menu">
+          <div class="content">
+            <h3>card item 01</h3>
+            <div class="price">$15.99/-</div>
+          </div> 
+        </div>
+        <div class="card-item">
+          <i class="fas fa-times"></i>
+          <img src="./images/menu-2.png" alt="menu">
+          <div class="content">
+            <h3>card item 02</h3>
+            <div class="price">$15.99/-</div>
+          </div> 
+        </div>
+        <div class="card-item">
+          <i class="fas fa-times"></i>
+          <img src="./images/menu-3.png" alt="menu">
+          <div class="content">
+            <h3>card item 03</h3>
+            <div class="price">$15.99/-</div>
+          </div> 
+        </div>
+        <div class="card-item">
+          <i class="fas fa-times"></i>
+          <img src="./images/menu-4.png" alt="menu">
+          <div class="content">
+            <h3>card item 04</h3>
+            <div class="price">$15.99/-</div>
+          </div> 
+        </div>
+        <a href="#" class="btn"> checkout now</a>
+      </div>
+    </header>
+    <!-------header end-------->
+   
+  
+  <!-------Review section start-------->
+  <section class="review" id="review">
+    <h1 class="heading">customer's <span>review</span></h1>
+    <div class="box-container">
+      <div class="box">
+        <img src="./images/quote.png" alt="quote" />
+        <p>
+          Lorem ipsum dolor sit amet consectetur, adipisicing elit. Voluptatem
+          aliquam molestiae, ex modi consequuntur distinctio reprehenderit
+          voluptate animi commodi in?
+        </p>
+        <img src="./images/avatar-1.png" alt="avatar" class="user" />
+        <h3>Jennifer Becker</h3>
+        <div class="stars">
+          <i class="fas fa-star"></i>
+          <i class="fas fa-star"></i>
+          <i class="fas fa-star"></i>
+          <i class="fas fa-star-half-alt"></i>
+        </div>
+      </div>
+      <div class="box">
+        <img src="./images/quote.png" alt="quote" />
+        <p>
+          Lorem ipsum dolor sit amet consectetur, adipisicing elit. Voluptatem
+          aliquam molestiae, ex modi consequuntur distinctio reprehenderit
+          voluptate animi commodi in?
+        </p>
+        <img src="./images/avatar-2.png" alt="avatar" class="user" />
+        <h3>Jhon Dee</h3>
+        <div class="stars">
+          <i class="fas fa-star"></i>
+          <i class="fas fa-star"></i>
+          <i class="fas fa-star"></i>
+          <i class="fas fa-star-half-alt"></i>
+        </div>
+      </div>
+      <div class="box">
+        <img src="./images/quote.png" alt="quote" />
+        <p>
+          Lorem ipsum dolor sit amet consectetur, adipisicing elit. Voluptatem
+          aliquam molestiae, ex modi consequuntur distinctio reprehenderit
+          voluptate animi commodi in?
+        </p>
+        <img src="./images/avatar-3.png" alt="avatar" class="user" />
+        <h3>Lisa Arambula</h3>
+        <div class="stars">
+          <i class="fas fa-star"></i>
+          <i class="fas fa-star"></i>
+          <i class="fas fa-star"></i>
+          <i class="fas fa-star-half-alt"></i>
+        </div>
+      </div>
+    </div>
+  </section>
+  <!-------Review section end-------->
+    <!-------footer section start-------->
+    <section class="footer">
+      <div class="search">
+        <input type="text" class="search-input" placeholder="search">
+        <button class="btn btn-primary">Search</button>
+      </div>
+      <div class="share">
+        <a href=""class="fab fa-facebook"></a>
+        <a href=""class="fab fa-twitter"></a>
+        <a href=""class="fab fa-instagram"></a>
+        <a href=""class="fab fa-linkedin"></a>
+        <a href=""class="fab fa-pinterest"></a>
+      </div>
+      <div class="links">
+        <a href="" class="active">Home</a>
+        <a href="">About</a>
+        <a href="">Menu</a>
+        <a href="">Products</a>
+        <a href="">Review</a>
+        <a href="">Contact</a>
+        <a href="">Blogs</a>
+      </div>
+      <div class="credit">
+        created by <span>Balı Tabur</span> | all rights reserved
+      </div>
+
+    </section>
+    <!-------footer section end-------->
+    <script src="./script/script.js"></script>
+  </body>
+</html>

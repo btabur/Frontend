@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        button {
+
+            width: 120px;
+            height: 40px;
+            border-radius: 20px;
+            box-shadow: 5px 5px 5px gray;
+            border: none;
+            color: white;
+            font-weight: bold;
+            /* Geçişli renk */
+            background: linear-gradient(to right,red, blue);
+        }
+        h1 {
+            /* Yazıya geçişli renk vermek için */
+            background: -webkit-linear-gradient( red, blue);
+            -webkit-background-clip: text;
+            -webkit-text-fill-color: transparent;
+        }
+        .dairesel {
+            margin-top: 10px;
+            width: 200px;
+            height: 200px;
+            background: radial-gradient(red 10%, green 30%, blue 100%);
+            border-radius: 50%;
+        }
+        .konik {
+            margin-top: 10px;
+            width: 100px;
+            height: 100px;
+            border-radius: 50%;
+            background: conic-gradient(gray 45deg, white 180deg, gray 360deg);
+        }
+
+    </style>
+</head>
+<body>
+
+    <h1>Başlık</h1>
+    <button>Tıkla</button>
+
+    <div class="dairesel"></div>
+    <div class="konik"></div>
+    
+</body>
+</html>

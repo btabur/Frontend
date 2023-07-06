@@ -1,0 +1,142 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+
+    <!--
+        table : tablo
+        tr: table row bir satır oluşturur
+        td : table data sütun oluşturur
+        th: table header Tablo Başlığı
+        rowspan, colspan : Satır ve Sütunları birleştirir
+        cell-speacing : hücreler arasına boşluk verir
+        border-speacing : kenarlıklara boşluk verir
+        col : sütunların genişliğine oran vermak isteğimizde
+
+        tabloyu da thead,tboby ve tfoot şekilnde ayırarak temiz kod yazabiliriz.
+    -->
+
+    <table border="1px">
+        <tr>
+            <th colspan="3">Kişisel Bilgiler</th>
+        </tr>
+        <tr>
+
+            <th>İsim</th>
+            <th>Soy isim</th>
+            <th>Yaş</th>
+        </tr>
+        <tr>
+            <td>Lorem</td>
+            <td>impus</td>
+            <td>22</td>
+        </tr>
+        <tr>
+            <td>Ahmet</td>
+            <td>Demir</td>
+            <td>25</td>
+        </tr>
+    </table>
+
+    <br><br>
+
+    <table border="1px">
+        <tr>
+            <th colspan="3">Kişisel Bilgiler</th>
+        </tr>
+
+        <tr>
+            <td rowspan="2">Lorem</td>
+            <td>impus</td>
+            <td>22</td>
+        </tr>
+        <tr>
+
+            <td>Demir</td>
+            <td>25</td>
+        </tr>
+    </table>
+    <br>
+    <hr>
+
+    <table border="1px">
+        <tr>
+            <th colspan="3">Product</th>
+        </tr>
+        <tr>
+            <th> No</th>
+            <th>P. name</th>
+            <th>P. Count</th>
+        </tr>
+        <tr>
+            <td>1</td>
+            <td>Pen</td>
+            <td rowspan="3">50</td>
+        </tr>
+        <tr>
+            <td>2</td>
+            <td>Book</td>
+        </tr>
+        <tr>
+            <td>3</td>
+            <td>Dust</td>
+        </tr>
+
+    </table>
+
+    <hr>
+
+    <!--**********************************************-->
+
+    <table>
+
+        <caption>Aylık Hasılat</caption>  <!-- Tabloya başlık ekler-->
+
+        <colgroup>  <!-- sütunlara özellik vermemizi sağlar-->
+            <col style="background-color: aqua;">
+            <col style="background-color: lightgrey;">
+            <col style="background-color: lightsalmon;">
+        </colgroup>
+        <thead>
+            <tr>
+                <th>Aylık</th>
+                <th>Gelir</th>
+                <th>Gider</th>
+            </tr>
+        </thead>
+        <tbody>
+            <tr>
+                <td>Ocak</td>
+                <td>100</td>
+                <td>200</td>
+            </tr>
+            <tr>
+                <td>Şubat</td>
+                <td>100</td>
+                <td>200</td>
+            </tr>
+            <tr>
+                <td>Mart</td>
+                <td>100</td>
+                <td>200</td>
+            </tr>
+        </tbody>
+        <tfoot>
+            <tr>
+                <td>Toplam</td>
+                <td>400</td>
+                <td>800</td>
+            </tr>
+        </tfoot>
+
+    </table>
+</body>
+
+</html>

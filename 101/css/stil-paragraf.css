@@ -1,0 +1,54 @@
+p{
+    background-color: rgb(28, 119, 141);
+    color: white;
+}
+.right-p{
+    text-align: right;
+    text-transform: lowercase; /*  yazıları küçül harfli yapmak için*/
+    font-weight: bold;  /* yazının koyu yada saydam gözükmesini sağlar */
+
+}
+.center-p{
+    text-align: center;
+    text-transform: uppercase;  /* yazıları büyüt harfli yapmak için */
+    font-size: 2em; /* varsayılan boyutun 2 katı verir */
+    line-height: 200%; /* satır yüksekliğini varsayılan değerin 2 katı yapar */ 
+    margin: 20px;
+     
+}
+.left-p{
+    text-align: left;
+    text-indent: 50px; /* ilk satırda 50 px boşluk bırakır*/
+    word-spacing: 10px; /* kelimeler arası 10 pxboşluk bırakır  */
+    letter-spacing: 2px; /* harfler arası 2px boşluk bırakır */
+    line-height: 20pz; /* Satır yüksekliğini ayarlar */
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+}
+
+a{
+
+    background-color: red;
+    color: white;
+    padding: 15px;
+    margin: 50px;
+
+    border-radius: 20px;
+}
+
+/* kullanım sırası buradaki gibidir*/
+
+a:link{  /* varsayılan hali tıklanmadan önceki hali */
+    background-color: blue;
+}
+a:visited{  /* link tıklandıktan sonra nasıl görüneceği */
+    background-color: yellow;
+}
+a:hover{  /* fare üzerine geldiğinde çalışır */
+
+    background-color: orange;
+}
+
+a:active { /* tıklama anında çalışır */
+
+    background-color: green;
+}

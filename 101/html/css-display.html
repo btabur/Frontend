@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+
+    <style>
+
+        .kutu1 {
+            width: 300px;
+            height: 300px;
+            background-color: red;
+            display: inline-block;       /* hem inline özelliklerini hem de blok elementin özelliklerini kapsar
+                                        inline elementi gibi bulunduğu yer kadar yer kaplarken, 
+                                         block elementi gibi genişlik ve yükseklik alabilir */
+
+          /* display :none elementi görünmez yapar alttan gelen elementler yerini doldurur
+      */
+        }
+        .kutu2 {
+            width: 300px;
+            height: 300px;
+            background-color: blue;
+            display: inline-block;
+
+            
+        }
+        .flex-ozelligi {
+            display: flex;  /* defaul değeri row dur */
+            flex-direction: column;   /* alt alta da sıralayabiliriz. */
+            flex-direction: row-reverse; /* yan yana sıralamatı sağdan başlatır */
+            direction: rtl; /* yan yana sıralamatı sağdan başlatır */
+            flex-direction: column-reverse; /* alt alta sıralamayı aşağıdan başlatır */
+
+        }
+    </style>
+</head>
+<body>
+    
+
+    <!--
+        inline   : sadece kapladığı yer kadar yer tutar, genişlik ve yükseklik verilemez
+        block    : tüm satırı kaplar  
+        inline-block ,none   
+        flex     :    içerisindeki elemanları istenirse yan yana istenirse alt alta sıralar
+        display:flex
+        direction: rtl  -> içerisindeki elementleri sağdan başlatır. 
+    -->
+
+    <p style="display: inline;">Paragraf1</p>
+    <a style="display: block" href="#">link1</a>
+
+    <div class="kutu1">
+
+    </div>
+    <div class="kutu2"></div>
+
+    <div class="flex-ozelligi">
+
+        <p>Lorem, ipsum.</p>
+        <p>Quia, deserunt!</p>
+        <p>Possimus, quo.</p>
+    </div>
+</body>
+</html>

@@ -1,0 +1,180 @@
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+.container {
+    margin: 0;
+    width: 100%;
+    height: 100vh;   /* body nin içerisindeki yüksekliklerde vh kullanılması daha çok iş görür */
+    background-image: linear-gradient(rgba(0,0,0,0.7),rgba(0,0,0,0.7)),url(./assetts/bg.jpg);
+    background-position: center;
+    background-size: cover;
+    position: relative;
+
+}
+
+header {
+   
+    width: 90%;
+    height: 90px;
+    display: flex;
+    justify-content: space-between;
+    margin: 10px auto;
+    padding: 10px;
+    position: relative;
+    z-index: 1;
+
+    
+}
+nav {
+ 
+    display: flex;
+    align-items: center;
+    gap: 30px;
+}
+
+.logo {
+    width: 80px;
+    height: 80px;
+    background-color: rgb(168, 158, 158);
+    padding: 5px;
+    border-radius: 10px;
+    cursor: pointer;
+}
+.logo:hover {
+
+    transform: scale(1.1);
+    transition: ease .5s;
+}
+.menu {
+    display: flex;
+    gap: 50px;
+}
+.menu a {
+    text-decoration: none;
+    color: white;
+    font-size: 20px;
+    font-weight: 800;
+    position: relative;
+}
+.menu a::before {  /* menu elemanlarının altına kırmızı çizgi ekledik */
+    content: ''; /* a elemanlarının önüne ekleme yapar */
+    position: absolute;
+    height: 3px;
+    width: 0;
+    background-color: red;
+    margin-top: 25px;
+    border-radius: 10px;
+}
+.menu a:hover::before {
+    width: 100%;
+    transition: ease .6s;
+}
+nav i {
+    font-size: 40px;
+    cursor: pointer;
+    color: wheat;
+    display: none;
+
+}
+nav i:hover {
+    transform: scale(1.1);
+    transition: ease .5 s;
+}
+section {
+
+  
+    display: flex;
+    width: 90%;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    max-height: 80%;
+    color: white;
+    overflow:auto;
+    margin-top: 30px;
+
+}
+p {
+    font-size: 15px;
+   line-height: 20px;
+}
+
+article {
+   
+    width: 50%;
+}
+
+h1 {
+   
+    font-size: 80px;
+}
+.article-left button {
+    width: 180px;
+    color: black;
+    font-size: 15px;
+    padding: 12px 0;
+    background-color: white;
+    border: 0;
+    border-radius: 50px;
+    margin-top: 30px;
+    margin-left: 5px;
+}
+.article-left button:hover {
+    background-color: black;
+    color: white;
+    box-shadow: 0 0 5px white;
+}
+.article-right {  /* ızgara şeklinde bire bir lik iki sütun oluşturur */
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+}
+.card {
+    height: 160px;
+    padding: 15px;
+    cursor: pointer;
+    background-image: linear-gradient(rgba(0,0,0,0.7),rgba(0,0,0,0.7)),url(./assetts/card-bg.jpg);
+    background-position: center;
+    background-size: cover;
+    margin: 15px;
+    transition: transform .5s; /* transform özelliğini 0.5 sn de değiştir */
+    border-radius: 20px;
+
+}
+.card:hover {
+    transform: translateY(-10px);
+    box-shadow: 0 0 10px white; /* x ve y ekseninde (0,0) noktasından başlayarak 10px llik beyaz bir gölgelik verir */
+
+}
+.card p {
+    font-size: 10px;
+}
+/* Tablet ekranındaki görünümü */
+@media (max-width:768px) {
+    nav i {
+        display: flex;
+    }
+    .menu {
+        display: none;
+    }
+    section {
+        display: block;
+    }
+    article {
+        width: 100%;
+    }
+    section {
+        margin-top: 50px;
+    }
+    .article-left h1 {
+        font-size: 50px;
+    }
+    .card {
+        margin-top: 30px;
+    }
+   
+
+}

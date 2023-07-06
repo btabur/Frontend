@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+
+    <script>
+        //dizi tanımlama
+        var isimler =[];
+        //diziye eleman eklemeü
+        isimler.push("Ali");
+        var elemanlar =[3,"market"];
+
+        //index 0 dan başlar
+        //eleman silme
+        delete elemanlar[1];
+        //eleman çıkarma splice metodu  çıkarılan elemanların yerine başkaları eklenebilir
+        var harfler =["a", "b","c","d","e"];
+        harfler.slice(1,2,"1","2","ali"); //1. index ten başlayarak 2 eleman çıkart. bunların Yerine 1 ve 2 yi yerleştir. Ekstra eleman da eklenebilir.
+    
+        //dizi uzunluğunu bulma
+        harfler.length;
+        //son elemanı silme
+        harfler.pop();
+        //ilk elemanı silme
+        harfler.shift();
+        //diziyi ters çevirme
+        harfler.reverse(); 
+        //dizi birleştirme
+        var renkler1=["yeşil","mavi"];
+        var renkler2=["kırmızı"];
+        var tümRenkler=renkler1.concat(renkler2);
+        //dizi içerisinde arama yapma
+        var isimler =["ali","ahmet","uğur"];
+        isimler.indexOf("ali"); //ali nin index numarasını döndürür
+    
+    
+    </script>
+    
+</body>
+</html>

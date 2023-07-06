@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+
+    <style>
+          div {
+        margin: 10px;
+        padding: 10px;
+        background-color: lightseagreen;
+        transition: all .4s;
+        width: 25%;
+    }
+    .div1 {
+        border-radius: 10px; 
+        box-shadow: 5px 5px lightgreen;
+       
+    }
+    .div1:hover {
+        background-color: red;
+        transform: translate(5px, 5px); /* imleç üzerine geldiğinde x ve y eksenin de +5px hareket eder. tüm tarayıcılarda çalışır*/
+       -webkit-transform: translate(50px, 50px); /* crome,opera ve safari de çalışır */
+       -ms-transform: translate(50px, 50px); /* internet explorer için */
+
+        box-shadow: none;
+
+    }
+    .div2 {
+        border-radius: 1px 20px; 
+    }
+    .div2:hover {
+        transform: rotate(90deg);  /* imleç üzerine gelince 90derece döndürür. */
+    }
+    .div3 {
+        border-radius: 2px 10px 15px 20px;
+    }
+    .div3:hover {
+        transform: translateY(-20px); /* dikeyde 20px yükselir */
+    }
+    .div4 {
+        border-radius: 20px/50%;  
+    }
+    .div4:hover {
+        transform:scale(0.9, 0.8); /* neseneyi x ekseninde 0.9 oranında y ekseninde 0.8 oranında küçültür */
+    }
+    .div5 {
+        width: 60px;
+        height: 60px;
+        border-radius: 50%; 
+    }
+    .div5:hover {
+        transform: skew(30deg);  /* şekli 30derece eğer */
+    }
+    .div6:hover {
+        transform: scale(0.9, 0.9) rotate(30deg) translate(20px ,20px); /* şeklinde bir kaç transform özelliğini aynı anda verebiliriz */
+    }
+    </style>
+</head>
+<body>
+    <div class="div1">Lorem, ipsum.</div>
+    <div class="div2">Numquam, officiis.</div>
+    <div class="div3">Repellendus, explicabo.</div>
+    <div class="div4">Distinctio, rem.</div>
+    <div class="div5">Fugit, voluptate?</div>
+    <div class="div6">Cumque, consequuntur?</div>
+    <div class="div7">Aperiam, libero.</div>
+    
+</body>
+</html>

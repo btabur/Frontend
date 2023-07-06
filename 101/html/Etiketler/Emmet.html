@@ -1,0 +1,160 @@
+
+<!--
+    Sadece ! işareti ile enter a basarak aşağıdaki yapıyı oluşturabiliriz.
+-->
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+
+
+<!--
+    Etiket isimlerini doğrudan verebiliyoruz
+    + kardeş öğe
+    > içine öğe 
+    ^ yukarı çık ve öğe oluştur
+    * çarp -> p*3
+    lorem ???
+    . -> class
+    # -> id
+
+    Anlayacağınız üzere Emmet bazı kısa yollarla basit bir biçimde HTML ve CSS kodu yazmamıza yardımcı olur.
+-->
+
+<!--
+     h1+h2  yazdıktan sonra tab tuşuna batığımızda otamatik oluşturulur
+-->
+<h1></h1>
+<h2></h2>
+
+<!--
+    h1+p+p+h2+p+p+p  istediğimiz miktarda yazıp tab tuşuna basabiliriz.
+-->
+
+<h1></h1>
+<p></p>
+<p></p>
+<h2></h2>
+<p></p>
+<p></p>
+<p></p>
+
+<!--
+    * ile istediğimiz çoklukta etiketler oluşturabiliriz.
+    p*4 yazıp tab tuşuna bastığımızda
+-->
+
+<p></p>
+<p></p>
+<p></p>
+<p></p>
+
+<!--
+    >   bir etiketin içersisine başka etiketleri yazırmak istediğimizde kullanılır
+
+    ul>li*5   -> bir sırasız liste ve içerisinde beş satır oluşturur
+-->
+
+<ul>
+    <li></li>
+    <li></li>
+    <li></li>
+    <li></li>
+    <li></li>
+</ul>
+
+<!--
+    ^ işareti etiketler içerisinde iç satıra inilmiş ise bir üs basamağa geçerek devam etmemizi sağlar
+
+    ol>li*3^p   bir sıralı liste ve içerisinde 3 satır oluşturur daha sonra bir üste çıkarak bir paragraf oluşturur.    
+-->
+
+
+<ol>
+    <li></li>
+    <li></li>
+    <li></li>
+</ol>
+<P></P>
+
+<!--
+    lorem : rastgegle kelimeler ve cümleler yazmak için kullanılır. Boş gözükmesi yerine ratgele yazılar gelir
+
+p>lorem yazıp enter a bastığığmızda bir paragraf içerisine rastgele bir yazı gelir.
+
+p>lorem5 -> 5 kelimelik bir lorem üretir
+-->
+<p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Expedita, atque, voluptatibus et, doloribus dolorem quae adipisci voluptatem voluptate numquam accusantium maxime nam enim corporis minus ex amet aspernatur ea incidunt.</p>
+
+<p>Lorem ipsum dolor sit amet.</p>
+
+<!--
+    kaç kez > içe içe eklemiş isek o kadar üste çıkmalıyız
+
+    ul>li*3>lorem1^^p*2>lorem5^h3>lorem1  aşağıdaki yapıyı verir
+
+-->
+<ul>
+    <li>Lorem.</li>
+    <li>Ex?</li>
+    <li>Deleniti?</li>
+</ul>
+<p>Lorem ipsum dolor sit amet.</p>
+<p>Dolores fugiat ratione vero iste!</p>
+<h3>Lorem.</h3>
+
+<!-- 
+    h3.deneme>lorem3  -> h3 etiketini class ile oluşturur
+-->
+<h3 class="deneme">Lorem.</h3>
+
+<!--
+    id oluşturmak için
+
+    h3#idsiniYaz>lorem1   -> h3 etiketi idsi ile oluşur
+-->
+
+<h3 id="deneme_id">Lorem, ipsum.</h3>
+
+<!--
+    hem sınıfını hem de id sini aynı anda oluşturmak için
+
+    h3.denemeClass#denemeid>lorem2
+-->
+
+<h3 class="denemeClass" id="denemeid">Lorem, ipsum.</h3>
+
+<!-- 
+    iki ayrı class eklemek için
+    h3.birinciClas.ikinciClass>lorem2
+-->
+
+<h3 class="birinciClas ikinciClass">Lorem, ipsum.</h3>
+
+<!-- Örnekler
+ul>li.tepki*3
+-->
+<ul>
+    <li class="tepki"></li>
+    <li class="tepki"></li>
+    <li class="tepki"></li>
+</ul>
+<!-- Örnekler
+ul>li.tepki*3
+-->
+<ul>
+    <li class="tepki"></li>
+    <li class="tepki"></li>
+    <li class="tepki"></li>
+</ul>
+
+    
+</body>
+</html>
+

@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+
+//nesne oluşturma: listelerin gelişmiş halidir
+
+var nesne={}  //boş bir nesne oluşturduk
+var insan ={
+    ad:"Lorem",
+    soyad: "impus",
+    yas: "22"
+};
+document.write(insan.ad +"<br>"); 
+var araba ={
+    marka:"mazda",
+    model:"Rx-7",
+    yil:"1990",
+    yazdir: function(current_yil){
+        return current_yil-this.yil;
+    }
+}
+document.write(araba.yazdir(2023));
+
+var sinif =new Object();
+sinif.seviye="lise"; 
+sinif.sube="11a";
+delete sinif.sube;
+
+
+    </script>
+    
+</body>
+</html>

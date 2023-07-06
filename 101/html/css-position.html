@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+
+    <style>
+
+        .kutu1 {
+
+            width: 400px;
+            height: 400px;
+            background-color: lightseagreen;
+
+            position: static;  /* elementler ya block ya da inline şekline harekert eder buna static denir. */
+           
+        }
+
+        .kutu2 {
+            width: 30px;
+            height: 30px;
+            background-color: purple;
+            
+            position: fixed;   /* içerisinde bulunan container in içerisinde belirli bir yere yerleştirmek için kullanılır. 
+                                    yeri sabit kalır ve değişmez bu özelliğin eklenmesi ile z index özelliğini de kullanabiliyoruz*/
+         
+          
+          
+            bottom: 20px;  /* verilen değerler ile ekranın in neresinde olacağı belirlenir 
+                                 Ekranın alttna 20px sağdan 20px llik kısmında bulunur   
+                                */ 
+            right: 20px;
+
+        }
+        .kutu3 {
+            width: 30px;
+            height: 30px;
+            background-color: blue;
+
+            position: relative;  /* relative özelliğinin verilmesi ile birlikte artık ek beş özellik daha verilebilir hale geliyor
+                                    top,bottom,left, right değerleri ile container içerisindeki yeri değişebiliyor
+                                    olduğu yerde kalır
+                                    */
+
+            top: 80px;     /* container in çerisinde sol üst köşeden başlar. margin değeri gibi hareket ediyorlar. */
+            left: 20px;
+           
+        }
+        .kutu4 {
+            width: 30px;
+            height: 30px;
+            background-color: pink;
+
+            position:absolute;   /* absulate değerinin verilemesi ile 5 özellik yine açılır. 
+                                fixed dan farklı olarak ekranın aşağı inmesi ile yukarıda kalır.
+                                    */
+
+            left: 50%;
+            top: 50%;
+            transform: translate(-50% -50%);  /* ekranın tam ortasına yerleştirmesi için */
+
+        }
+
+    </style>
+</head>
+<body>
+    
+    <div class="kutu1">
+        <div class="kutu2"></div>
+        <div class="kutu3"></div>
+        <div class="kutu4"></div>
+    </div>
+   
+    
+</body>
+</html>

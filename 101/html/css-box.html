@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+
+    <style>
+
+        .box {
+            width: 300px;
+            height: 300px;
+            padding: 10px;
+            margin-right: 10px;
+            float: left;
+        }
+        .bg-red {
+            background-color: red
+        }
+        .bg-green {
+            background-color: green;
+        }
+
+        .clear {
+            clear: both;  /* float özelliğinin sağ ve solunu temizler. gelecek elementler artık yanlına gelmez */
+        }
+
+        .left-bar {
+            width: 200px;
+            float: left;
+        }
+        .content {
+            width: 800px;
+            float: left;
+        }
+
+        .contenier {
+            width: 1000px;
+            margin: 10px auto 10px auto;
+           
+        }
+        .card {
+            width: 20%;
+            float: left;
+            background-color: lightgray;
+            padding: 5%;
+            margin-right: 3%;
+            border-radius: 10px;
+        }
+
+
+    </style>
+</head>
+<body>
+
+  
+
+    <div class="box bg-red">
+        <p>Lorem ipsum dolor sit.</p>
+        <p>Molestiae quos accusamus quaerat!</p>
+        <p>Commodi quos sequi quia!</p>
+    </div>
+    <div class="box bg-green">Lorem ipsum dolor sit.</div>
+    <div class="clear"></div>
+   
+    
+    <div class="contenier">
+
+        <div class="left-bar">
+            <h3>left bar</h3>
+            Lorem ipsum dolor sit amet.
+        </div>
+
+        <div class="content">
+           <div class="card">
+            <h2>Lorem, ipsum.</h2>
+            <p>Lorem ipsum dolor sit amet.</p>
+            <p>Odio quia quisquam blanditiis id!</p>
+           </div>
+           <div class="card">
+            <h2>Illum, id?</h2>
+            <p>Lorem ipsum dolor sit amet.</p>
+            <p>Animi alias harum adipisci culpa.</p>
+           </div>
+           <div class="card">
+            <h2>Dolorem, </h2>
+            <p>Lorem ipsum dolor sit amet.</p>
+            <p>Natus laborum doloremque in sed.</p>
+           </div>
+        </div>
+    </div>
+    
+</body>
+</html>

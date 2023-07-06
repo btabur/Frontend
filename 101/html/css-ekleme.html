@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="../css/stil.css"> <!-- bir üst dizine çıkmak için  ../   işareti kullanılır-->
+    <title>Document</title>
+
+    <!--  css özelliğini sayfanın başında da bu şekilde verebiliriz 
+            genelde farklı bir sayfada css dosyası yazılarak link verilir
+    -->
+
+    <!-- css içerisinde özellikleri değiştirirken
+        1. etiket isimleri ile değiştirebiliriz
+        2. değiştireceğimiz element bir tane ise id si ile değiştirebiliriz
+        3. aynı özellikleri olmasını istediğimiz etiketlere aynı class ta toplayarak da yapabiliriz.
+        4. etiket özelliklerinden de dğiştirebiliriz
+    
+    -->
+    <style>   
+        table{    /*  bu sayfadaki tüm tabloları etkiler*/ 
+            background-color: aquamarine ;
+        }
+       
+
+        #ozelParagraf{    /*  sadece özel paragraf adlı id ye sahip olan element değişir*/
+            color: blue;
+        }
+        .center {   /*  center sınıfına ait tüm elemanları etkiler */
+          background-color: red;
+          width: 300px;
+
+        }
+        [title=lorem]{ /*   title özelliği lorem olan elemanları değitirir */
+            padding: 10px;
+        }
+
+
+
+    </style>
+</head>
+<body>
+    
+<p id="ozelParagraf"> Lorem, ipsum dolor sit amet consectetur adipisicing elit. Nam, odit!</p>
+
+<p class="center">Lorem ipsum, dolor sit amet consectetur adipisicing elit. Tempora, dignissimos.</p>
+
+<img class="center" src="../html/images/doga.jpg" alt="doga">
+
+<p title="lorem">Lorem ipsum dolor sit, amet consectetur adipisicing elit. Quisquam, molestias.</p>
+</body>
+</html>

@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+
+        input[type=radio]:checked + span {  /* type değeri radio olan input etiketeti tik olduğunda hemen sonrasında gelen span etiketi etkiler */
+            color: red;
+        }
+        .button::before {
+            content: attr(data-hide); /* button sınıfına ait etiketin data-hide özelliğinde yazan değeri etiketin önüne yazar*/
+        }
+        .checkbox:checked + .button::before {  /* .checkbox adlı sınıfa ait checkbox tik olduğunda hemen sonra gelen .button sınıfının önüne gelen yazıyı etkiler */
+            content: attr(data-show);
+
+        }
+        .checkbox:checked +.button +.box {  /* tik olduğunda ondan sonra gelen .button sınıfından sonra gelen .box sınıfını etkiler */
+            display: none;
+        }
+ /***************************/
+        input:valid {
+            border-color: green; /* input geçerli ise çalışır */
+        }
+        input:invalid {
+            border-color: red; /* input geçerli değilse çalışır */
+        }
+
+        input:valid + span::before {
+            content: 'ok';
+            color: green;
+        }
+        input:invalid + span::before {
+            content: 'x';
+            color: red;
+        }
+    </style>
+</head>
+<body>
+    
+    <label>
+        <input type="radio" name="cinsiyet" value="kadin">
+        <span>Kadın</span>
+    </label> 
+    <label>
+        <input type="radio" name="cinsiyet" value="erkek">
+        <span>Erkek</span>
+    </label>
+    <hr>
+    <input type="checkbox" class="checkbox" id="cb">
+    <label for="cb" class="button" data-show="Göster" data-hide="Gizle"></label>
+    <div class="box">Burası gizlenebilir bir div dir</div>
+
+    <hr>
+
+    <table>
+        <tr>
+            <td>Adınız</td>
+            <td><input type="text" required> <span></span></td>
+        </tr>
+        <tr>
+            <td>Email</td>
+            <td><input type="email" required><span></span></td>
+        </tr>
+    </table>
+
+</body>
+</html>

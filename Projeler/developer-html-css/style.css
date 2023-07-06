@@ -1,0 +1,584 @@
+ /* Yazı fontu */
+ @import url('https://fonts.googleapis.com/css2?family=Orelega+One&family=Poppins:wght@100;200;400;500;600;700;800;900&family=Russo+One&display=swap');
+ *{
+    font-family: 'Poppins', sans-serif;
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+  }
+
+  /* arkaplan **/
+  .group {
+  
+    position: relative;
+    background: radial-gradient( circle at 50% 50%, rgb(51, 10, 10), rgb(5, 5, 21));
+    display: flex;
+    flex-direction: column;
+   
+  }
+  .bg {
+    position: absolute;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    opacity: 0.18;
+    object-fit: cover;
+    display: flex;
+  
+  }
+
+/******header *****/
+  header {
+    width: 100%;
+    display: flex;
+    align-items: center;
+    padding: 20px 50px;
+    z-index: 6;
+    background-color: #39053163;
+    position: fixed;
+    justify-content: space-between ;
+   
+   
+  }
+  .logo a {
+    text-decoration: none;
+    color: white;
+    font-weight: 600;
+    font-size: 25px;
+  }
+ .logo a b {
+   color: #fd003b;
+  }
+  .logo i {
+    color: white;
+    font-size: 25px;
+  }
+  .menu {
+    display: flex;
+    align-items: center;
+  }
+  .menu i {
+    display: none;
+  }
+  .menu-content {
+    display: flex;
+    gap: 20px;
+  }
+  .menu-content a {
+    text-decoration: none;
+    color: white;
+    font-size: 15px;
+  }
+  .menu-content a:hover {
+    color: #fd003b;
+  }
+
+  /*navigation ****/
+  nav {
+   
+    height: 500px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    z-index: 5;
+   
+
+  }
+  nav .left {
+    width: 80%;
+  
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    gap: 30px;
+    padding: 0 50px;
+    color: white;
+  }
+  .animation {
+    color: #c0d666;
+    font-weight: 600;
+    font-size: 34px;
+    animation: anim1 4s ease-in-out 0s 1000 ;
+  }
+  @keyframes anim1 {
+    0% {
+        transform: translateX(0px);
+    }50% {
+        transform: translateX(100px);
+    }100% {
+        transform: translateX(0px);
+    }
+  }
+  nav .left h1 {
+    font-family: 'Russo One', sans-serif;
+    font-size: 46px;
+  }
+  nav .left button {
+    width: 120px;
+    height: 40px;
+    background-color: transparent;
+    color: white;
+    border: 2px solid white;
+   
+  }
+  nav .left button:hover {
+    border-radius: 10px;
+    border-color: rgb(94, 17, 94) ;
+    transition: ease .3s;
+  }
+
+  /*sosyal medya ****/
+  .advert {
+    height: 70px;
+    display: flex;
+    align-content: center;
+    justify-content: center;
+
+    z-index: 5;
+    padding: 0 80px;
+   
+  }
+  .advert img {
+    width: 70px;
+    cursor: pointer;
+  }
+  .icons {
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    width: 100%;
+    animation: reklam 3s ease-in infinite;
+  }
+  @keyframes reklam {
+    0%{
+        transform: translateX(10px);
+    }
+    50%{
+        transform: translateX(-10px);
+    }
+    
+    100%{
+        transform: translateX(10px);
+    }
+  }
+
+  /* Yorumlar******/
+  aside {
+    background-image: radial-gradient(rgba(0, 0, 0, 0.809) 40%, black),url('https://images.unsplash.com/photo-1622945931125-5b8ab394fa1c?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxzZWFyY2h8MzN8fGxlZHxlbnwwfHwwfHw%3D&auto=format&fit=crop&w=500&q=60');
+    background-size: cover;
+    /*background-size: 100% 100%; */
+  }
+  aside h1 {
+    font-size: 36px;
+    color: white;
+    padding-top: 30px;
+    text-align: center;
+  }
+  .cards {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 20px;
+    align-items: center;
+    justify-content: center;
+    padding: 50px 0;
+  }
+
+  .card {
+    color: white;
+    width: 45%;
+    padding: 15px;
+    border: 0.2px solid rgba(79, 76, 76,0.5);
+    border-radius: 10px;
+   
+
+  }
+  .card:hover {
+    border: 0.2px solid rgba(141, 126, 126, 0.5);
+    background-image: radial-gradient(rgba(13, 12, 15, 0.9),black)
+  }
+  .card-title {
+    display: flex;
+    gap: 30px;
+    align-items: center;
+    margin-bottom: 20px;
+  }
+  .card-title img {
+    width: 45px;
+    height: 45px;
+    border-radius: 50%;
+  }
+  .card p {
+    font-weight: 200;
+    margin-bottom: 20px;
+  }
+
+  .card button {
+    padding: 7px 15px;
+    font-size: 20px;
+    color: white;
+    background: transparent;
+    border: 4px solid #500523;
+    border-radius: 20px;
+  }
+  /* About*************/
+  article {
+    background-color: black;
+    color: white;
+    display: flex;
+    flex-direction: column;
+    padding: 50px;
+    padding: 0 50px;
+  }
+  article h1 {
+    font-size: 36px;
+    text-align: center;
+  
+  }
+  article p {
+    margin-bottom: 40px;
+    color: #c13e73;
+    text-align: center;
+  }
+  .about {
+    display: flex;
+    align-items: center;
+  }
+  .about-left{
+    width: 60%;
+  }
+  .about-left img {
+    width: 450px;
+    object-fit: cover;
+    border-radius: 10px;
+
+  }
+  .about-right {
+    width: 40%;
+    display: flex;
+    flex-direction: column;
+    padding: 7px;
+  }
+  .about-right h2 {
+    color: #c13e73;
+    font-size: 30px;
+    margin-bottom: 10px;
+    text-align: center;
+  
+  }
+  .about-right button {
+    width: 220px;
+    padding: 7px;
+    margin-top: 30px;
+    color: white;
+    background: linear-gradient(to left, #c13e73,#ee156c);
+    border: none;
+    border-radius: 10px;
+    font-size: 20px;
+  }
+  /*******Contact***********/
+  .contact {
+    display: flex;
+    flex-direction: row;
+    background-color: black;
+    padding: 180px 0;
+    align-items: center;
+    justify-content: center;
+    gap: 20px;
+   
+
+  }
+  .contact-left {
+   
+    width: 50%;
+    display: flex;
+    flex-direction: column;
+    align-items: start;
+    gap: 20px;
+  }
+  .contact-left h2 {
+    font-size: 36px;
+  }
+  .contact-left span {
+    color: #500523;
+  }
+  .contact-left p:nth-child(2) {
+    color: white;
+    font-size: 20px;
+    font-weight: 600;
+    text-align: start;
+  }
+  .contact-left p:nth-child(3) {
+    color: white;
+    font-size: 16px;
+    font-weight: 400;
+    text-align: start;
+  }
+  .contact-left ul li {
+    list-style-type: none;
+    color: gray;
+  }
+  
+  .contact-right {
+    width: 50%;
+    padding: 0 50px 0 0 ;
+
+
+  }
+  .contact-right form {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+    width: 100%;
+  }
+  .contact-right form input {
+    background-color: #2a2a2a;
+    height: 60px;
+    border: none;
+    border-radius: 10px;
+    color: white;
+    font-size: 17px;
+    font-weight: 500;
+    padding-left: 10px;
+
+  }
+  .contact-right form textarea {
+    background-color: #2a2a2a;
+    height: 120px;
+    border: none;
+    border-radius: 10px;
+    color: white;
+    font-size: 17px;
+    font-weight: 500;
+    padding-left: 10px;
+  }
+  .contact-right button {
+    align-self: center;
+    padding: 7px 15px;
+    font-size: 20px;
+    color: white;
+    background: transparent;
+    border: 4px solid #500523;
+    border-radius: 10px;
+    margin-top: 20px;
+  }
+
+  /********************footer********************/
+  footer {
+    display: flex;
+    gap: 20px;
+  
+    background-color: #2a2a2a;
+    justify-content: space-between;
+    padding: 50px 50px;
+    align-items: center;
+  }
+  .footer-left {
+  
+    width: 40%;
+    display: flex;
+    flex-direction: column;
+    gap: 20px ;
+  }
+  .footer-left .logo i {
+   
+    font-size: 18px;
+  }
+  .footer-left .social {
+    display: flex;
+    gap: 10px;
+    margin-top: 20px;
+    margin-bottom: 40px;
+  }
+  .social a i {
+    color: white;
+    font-size: 30px;
+  }
+  .social a i:hover {
+   transform: scale(1.4);
+   color: #500523;
+   transition: all .4s;
+  }
+  .footer-left p {
+    color: white;
+    font-size: 18px;
+  }
+  .footer-right {
+    width: 60%;
+ 
+
+  }
+  .footer-right table {
+    width: 90%;
+    text-align: start;
+  }
+  .footer-right table tr {
+    height: 40px;
+    font-size: 18px;
+  }
+  .footer-right table th {
+    text-align: start;
+
+  }
+  .footer-right table td {
+    color: white;
+  }
+
+  
+
+
+  /* Tablet için  min 768px max:1023px */
+  @media screen and (min-width:768px) and (max-width:1023px) {
+    .menu {
+        position: relative;
+    }
+    .menu i {
+        display: flex;
+        font-size: 25px;
+        color: white;
+    }
+
+    .menu:hover .menu-content{
+        display: flex;
+        flex-direction: column;
+        position: absolute;
+        background-color: gray;
+        border-radius: 10px;
+        padding: 10px;
+        top:20px;
+        right: 0;
+
+    }
+    .menu-content {
+        display: none;
+    }
+  
+    .about {
+        flex-direction: column;
+    }
+    .about-left {
+        width: 100%;
+        display: flex;
+        justify-content: center;
+    }
+    .about-left img {
+       height: 300px;
+      
+      
+    }
+    .about-right {
+        width: 80%;
+    }
+    .contact {
+      flex-direction: column;
+      
+    }
+    .contact-left {
+      width: 100%;
+      align-items: center;
+    }
+    .contact-right {
+      width: 80%;
+      padding: 0;
+    }
+   .contact-left p:nth-child(3) {
+      text-align: center ;
+    }
+    .contact-left ul li {
+      text-align: center;
+    }
+
+    footer {
+      flex-direction: column;
+    }
+    .footer-right  {
+    
+      width: 100%;
+    }
+    .footer-right table {
+      display: flex;
+      flex-wrap: wrap;
+    }
+    .footer-right table td,th {
+      width: 50%;
+    }
+    
+  }
+
+  /* Mobil Tasarım  max 768px*/
+@media screen and (max-width:768px) {
+    .menu {
+        position: relative;
+    }
+    .menu i {
+        display: flex;
+        font-size: 25px;
+        color: white;
+    }
+
+    .menu:hover .menu-content{
+        display: flex;
+        flex-direction: column;
+        position: absolute;
+        background-color: gray;
+        border-radius: 10px;
+        padding: 10px;
+        top:20px;
+        right: 0;
+
+    }
+    .menu-content {
+        display: none;
+    }
+    .card {
+        width: 80%;
+    }
+
+    .about {
+        flex-direction: column;
+    }
+    .about-left {
+        width: 100%;
+        display: flex;
+        justify-content: center;
+    }
+    .about-left img {
+       height: 300px;
+      
+      
+    }
+    .about-right {
+        width: 100%;
+    }
+    .contact {
+      flex-direction: column;
+      
+    }
+    .contact-left {
+      width: 100%;
+      align-items: center;
+    }
+    .contact-right {
+      width: 80%;
+      padding: 0;
+    }
+   .contact-left p:nth-child(3) {
+      text-align: center ;
+    }
+    .contact-left ul li {
+      text-align: center;
+    }
+    footer {
+      flex-direction: column;
+    }
+    .footer-right  {
+    
+      width: 100%;
+    }
+    .footer-right table {
+      display: flex;
+      flex-wrap: wrap;
+    }
+    .footer-right table td,th {
+      width: 50%;
+    }
+}

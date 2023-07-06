@@ -1,0 +1,322 @@
+:root {
+    --text-color :white;
+    --box-border-radius:10px;
+    --text-font-size:15px;
+
+}
+
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+header {
+    min-height: 100vh;
+    /* ekran büyüklüğünde olur */
+    background: linear-gradient(rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.7)), url(./assets/bg.webp);
+    background-position: center;
+    background-size: cover;
+    position: relative;
+}
+
+nav {
+    display: flex;
+    justify-content: space-between;
+    padding: 10px;
+    align-items: center;
+}
+
+nav a img {
+    width: 150px;
+}
+
+.nav-links {
+    flex: 1;
+    text-align: right;
+}
+
+.nav-links ul li {
+    list-style-type: none;
+    display: inline-block;
+    padding: 10px;
+    position: relative;
+}
+
+.nav-links ul li a {
+    text-decoration: none;
+    font-size: 15px;
+    color: var(--text-color);
+
+}
+
+.nav-links ul li a::after {
+    content: '';
+    width: 0;
+    height: 2px;
+    background-color: red;
+    margin-top: 5px;
+    display: block;
+}
+
+.nav-links ul li a:hover::after {
+    width: 100%;
+    transition: all 0.4s;
+}
+
+.nav-links i {
+    color: var(--text-color);
+    font-size: 30px;
+    display: none;
+}
+
+/*****text box*************/
+.text-box {
+    width: 90%;
+    position: absolute;
+    color: var(--text-color);
+    /* ekranın ortasına almak için */
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    text-align: center;
+}
+
+.text-box h1 {
+    font-size: 50px;
+
+}
+
+.text-box p {
+    margin: 10px 40px;
+
+}
+
+.hero-btn {
+    display: inline-block;
+    text-decoration: none;
+    color: var(--text-color);
+    border: 1px solid white;
+    padding: 10px 30px;
+    background-color: transparent;
+    position: relative;
+    cursor: pointer;
+}
+
+.hero-btn:hover {
+    background-color: red;
+    border: 1px solid red;
+    transition: .3s;
+}
+
+/************genel yapıar  *****/
+.center-div {
+    width: 80%;
+    margin: auto;
+    text-align: center;
+    margin-top: 80px;
+
+}
+
+.center-col {
+    flex-basis: 30%;
+    border-radius: var(--box-border-radius);
+}
+.box-heading {
+    font-size: 35px;
+    margin-top: 30px 0;
+}
+.box-desc {
+    font-size: 25px;
+    margin-top: 20px;
+
+}
+/******Course********/
+
+
+
+
+.course p {
+    color: #777;
+    font-size: 15px;
+    font-weight: 300;
+    line-height: 20px;
+    padding: 10px;
+}
+
+.row {
+    margin-top: 10px;
+    display: flex;
+    justify-content: space-between;
+}
+
+.course-col {
+    background-color: rgb(233, 229, 222);
+    margin-bottom: 10px;
+}
+
+.course-col:hover {
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.7);
+    transition: 0.4s;
+}
+
+.course-col h3 {
+    margin: 10px;
+}
+
+/*******CAMPUS******/
+
+
+.course p {
+    margin: 20px;
+}
+
+.campus-col {
+    margin-bottom: 30px;
+    position: relative;
+    overflow: hidden;
+}
+
+.campus-col img {
+    width: 100%;
+    display: block;
+}
+
+.layer {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    transition: 0.3s;
+}
+
+.layer:hover {
+    background-color: rgba(190, 109, 38, 0.4);
+    transition: 0.3s;
+}
+
+.layer h3 {
+    width: 100%;
+    font-size: 25px;
+    color: var(--text-color)white;
+    position: absolute;
+    bottom: 0;
+    opacity: 0;
+
+}
+
+.layer:hover h3 {
+    opacity: 1;
+    bottom: 50%;
+    transition: 0.4s;
+}
+
+/******* facilities *****************/
+.facilities {
+    padding-top: 100px;
+}
+
+.facilities>p {
+    margin-bottom: 30px;
+}
+
+.facilities-col {
+    margin-bottom: 10px;
+    text-align: start;
+    
+}
+.facilities-col img {
+    width: 100%;
+    border-radius: var(--box-border-radius);
+}
+.facilities-col p {
+    margin: 10px;
+}
+
+/***************testemonial **********/
+.testemonial {
+    margin-top: 90px;
+}
+
+.testemonial-col {
+margin-bottom: 10px;
+text-align: left;
+cursor: pointer;
+display: flex;
+padding: 10px;
+background-color:antiquewhite
+}
+.testemonial-col:hover {
+    box-shadow: 0 0 10px;
+    transition: 0.3s;
+}
+
+.testemonial-col img  {
+    height: 60px;
+    width: 60px;
+    border-radius: 50%;
+    margin-right: 10px;
+   
+}
+.testemonial-col p {
+    text-align: left;
+    margin-top: 0;
+    padding: 0 10px;
+}
+.testemonial-col i {
+    color: red;
+}
+ /**********urgent call*****/
+ .ua{
+    background-image: linear-gradient(rgba(0,0,0,0.7),rgba(0,0,0,0.7)),url(./assets/london.jpeg);
+    padding: 100px 0;
+    color: var(--text-color);
+    background-size: cover;
+    background-position: center;
+    margin-top: 20px;
+    border-radius: var(--box-border-radius);
+ }
+
+
+ /******* footer****/
+ footer {
+    padding: 30px;
+ }
+
+ .icons {
+    margin: 10px;
+ }
+ footer p:nth-of-type(1) {
+    text-align: justify;
+ } 
+ footer i {
+    color: red;
+    margin: 10px;
+    padding: 10px;
+    font-size: 20px;
+
+ }
+
+/***********TABLET****************/
+@media (max-width:768px) {
+    .nav-links i {
+        display: block;
+        margin: 10px;
+        cursor: pointer;
+    }
+
+    .nav-links ul {
+        display: none;
+    }
+
+    .text-box h1 {
+        font-size: 30px
+    }
+
+    .row {
+        flex-direction: column;
+    }
+
+}

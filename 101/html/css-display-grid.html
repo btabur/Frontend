@@ -1,0 +1,195 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        .ana {
+            background-color: yellowgreen;
+
+            margin: 5px;
+            display: grid;
+        }
+
+        .cocuk {
+            background-color: wheat;
+            padding: 5px;
+            margin: 5px;
+        }
+
+        .ana1 {
+            /* grid :ızgara  */
+
+
+            grid-template-columns: 100px 30% auto 1fr 2fr;
+            /* ana1 sınıfının altındaki elemanları 3 sütuna ayırır */
+            /* 1. sutun  100px 2. sütun %30 luk kısım alır 3. sütun kalan alanı otomatik genişlik alır */
+            /* 4. ve 5. sütunlar 1 e 2 oranın da paylaşır */
+            grid-auto-rows: 100px;
+            /* tüm satırları 100px yapar */
+        }
+
+        .ana2 {
+            grid-template-columns: repeat(5, 1fr);
+            /* 5 tane eşit sütun oluşturur tek tek yazmak yerine kullanılır */
+            grid-template-rows: 60px 30% auto;
+            /* 1. satır 60px , 2. satır %30 luk kısmı kaplar ,3. satırda otomatik olarak kapladığı yer kadar alan alır*/
+
+        }
+
+        .ana2 div:nth-child(1) {
+            /* 1. çocuk sütunda 2. sütundan başlayıp 4. sütuna kadar yerleşir 4 dahil değil */
+            grid-column-start: 2;
+            grid-column-end: 4;
+            grid-row-start: 1;
+            /* satır olarak 1. satırdan başlar 3. satırda biter */
+            grid-row-end: 3;
+        }
+
+        .ana1 div:nth-child(1) {
+            /* yukarıdakinin kısa kullanımı */
+            grid-column: 2 / 4;
+            grid-row: 1 / 3;
+        }
+
+        .ana3 {
+            background-color: aquamarine;
+            grid-template-columns: repeat(4, 1fr);
+        }
+
+        .ana3 div:nth-child(1) {
+            /* grid-row ve grid-column un birlikte kullanımı */
+            grid-area: 1 / 1 / 3 / 3;
+            /* row start, column start, row end, column end */
+        }
+
+        .ana3 div:nth-child(2) {
+            align-self: center;
+            justify-self: center;
+        }
+
+        .ana3 div:nth-child(3) {
+            /* yukarıdakinni kısa hali */
+            place-self: start center;
+            /* vertical , horizantal */
+        }
+
+        .ana4 {
+            grid-template-areas: 'ust ust . .'
+                'ust ust . .';
+
+        }
+
+        .ana4 div:nth-child(6) {
+            grid-area: ust;
+        }
+
+        .ana5 {
+            grid-template-areas: 'ust ust ust ust'
+                '.  anamenu anamenu .'
+                'icerik icerik yanmenu yanmenu'
+                'alt alt . .';
+        }
+
+        .ana5>div:nth-child(1) {
+            grid-area: ust;
+        }
+
+        .ana5>div:nth-child(2) {
+            grid-area: anamenu;
+        }
+
+        .ana5>div:nth-child(3) {
+            grid-area: icerik;
+        }
+
+        .ana5>div:nth-child(4) {
+            grid-area: yanmenu;
+        }
+
+        .ana5>div:nth-child(5) {
+            grid-area: alt;
+        }
+    </style>
+</head>
+
+<body>
+
+    <div class="ana ana1">
+        <div class="cocuk">cocuk1</div>
+        <div class="cocuk">cocuk2</div>
+        <div class="cocuk">cocuk3</div>
+        <div class="cocuk">cocuk4</div>
+        <div class="cocuk">cocuk5</div>
+        <div class="cocuk">cocuk6</div>
+        <div class="cocuk">cocuk7</div>
+        <div class="cocuk">cocuk8</div>
+        <div class="cocuk">cocuk9</div>
+        <div class="cocuk">cocuk10</div>
+        <div class="cocuk">cocuk11</div>
+        <div class="cocuk">cocuk12</div>
+    </div>
+
+    <div class="ana ana2">
+        <div class="cocuk">cocuk1</div>
+        <div class="cocuk">cocuk2</div>
+        <div class="cocuk">cocuk3</div>
+        <div class="cocuk">cocuk4</div>
+        <div class="cocuk">cocuk5</div>
+        <div class="cocuk">cocuk6</div>
+        <div class="cocuk">cocuk7</div>
+        <div class="cocuk">cocuk8</div>
+        <div class="cocuk">cocuk9</div>
+        <div class="cocuk">cocuk10</div>
+        <div class="cocuk">cocuk11</div>
+        <div class="cocuk">cocuk12</div>
+    </div>
+
+    <div class="ana ana3">
+        <div class="cocuk">cocuk1</div>
+        <div class="cocuk">cocuk2</div>
+        <div class="cocuk">cocuk3</div>
+        <div class="cocuk">cocuk4</div>
+        <div class="cocuk">cocuk5</div>
+        <div class="cocuk">cocuk6</div>
+        <div class="cocuk">cocuk7</div>
+        <div class="cocuk">cocuk8</div>
+        <div class="cocuk">cocuk9</div>
+        <div class="cocuk">cocuk10</div>
+        <div class="cocuk">cocuk11</div>
+        <div class="cocuk">cocuk12</div>
+    </div>
+    <div class="ana ana4">
+        <div class="cocuk">cocuk1</div>
+        <div class="cocuk">cocuk2</div>
+        <div class="cocuk">cocuk3</div>
+        <div class="cocuk">cocuk4</div>
+        <div class="cocuk">cocuk5</div>
+        <div class="cocuk">cocuk6</div>
+        <div class="cocuk">cocuk7</div>
+        <div class="cocuk">cocuk8</div>
+        <div class="cocuk">cocuk9</div>
+        <div class="cocuk">cocuk10</div>
+        <div class="cocuk">cocuk11</div>
+        <div class="cocuk">cocuk12</div>
+    </div>
+    <div class="ana ana5">
+        <div class="cocuk">cocuk1</div>
+        <div class="cocuk">cocuk2</div>
+        <div class="cocuk">cocuk3</div>
+        <div class="cocuk">cocuk4</div>
+        <div class="cocuk">cocuk5</div>
+        <div class="cocuk">cocuk6</div>
+        <div class="cocuk">cocuk7</div>
+        <div class="cocuk">cocuk8</div>
+        <div class="cocuk">cocuk9</div>
+        <div class="cocuk">cocuk10</div>
+        <div class="cocuk">cocuk11</div>
+        <div class="cocuk">cocuk12</div>
+    </div>
+
+</body>
+
+</html>

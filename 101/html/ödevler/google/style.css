@@ -1,0 +1,176 @@
+.btn-appsbtn {
+
+    width: 20px;
+    height: 20px;
+    opacity: 0.5;
+    position: relative;
+    margin-top: 9px;
+    margin-left: 9px;
+}
+
+nav {
+    float:right;
+    margin: 10px;
+    display: block;
+}
+header {
+    width: 100%;
+    height: auto;
+}
+.profil {
+    width: 33px;
+    height: 33px;
+    border-radius: 50%;
+    position: relative;
+    margin-bottom: -5px;
+    margin-left: 4px;
+    margin-top: 4px;
+
+
+}
+.div-profil {
+    width: 41px;
+    height: 41px;
+    display: inline-block;  
+    border-radius: 50%; 
+
+}
+.div-profil:hover {
+    background-color: rgb(219, 216, 216);
+
+}
+.link {
+    text-decoration: none;
+    color: rgba(0,0,0,.87);
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 14px;
+}
+.link:hover {
+    text-decoration: underline;
+}
+.div-btn-appsbtn {
+width: 38px;
+height: 38px;
+display: inline-block;
+border-radius: 50%;
+}
+.div-btn-appsbtn:hover {
+    background-color: lightgrey;
+    opacity: 0.7;
+}
+.clear {
+    clear: both;
+}
+.div-google {
+    width: 272px;
+    height: 292px;
+    position: relative;
+    margin: 0 auto 0 auto;
+  
+}
+.img-google {
+    width: 272px;
+    height: 92px;
+    position: relative;
+    margin-top: 200px;
+    
+}
+section {
+    width: 100%;
+    height: 80px;
+    position: relative;
+    padding: 10px;
+
+}
+.search-cerveve {
+    width: 584px;
+    height: 48px;
+    position: relative;
+    margin: 10px auto;
+    border: 1px solid rgb(194, 190, 190);
+    border-radius: 60px;
+
+}
+.search-cerveve:hover {
+    box-shadow: 20px 10px 15px 0px rgba(0,0,0,0.1),0px 10px 15px -3px rgba(0,0,0,0.1);
+}
+.div-search {
+    width: 100%;
+    height: 100%;
+    float: left;
+   
+
+}
+
+.icon-search {
+    width:30px;
+    height: 30px;
+    position: relative;
+    margin-left: 10px;
+    margin-top: 8px;
+}
+
+.textarea-search {
+    width: 480px;
+    border: 0;
+    height: 80%;
+  
+
+}
+.textarea-search:hover {
+    border: 0;
+}
+.icon-ses {
+    width: 30px;
+    height: 30px;
+}
+.div-btn {
+    width: 350px;
+    position: relative;
+    margin: 10px auto;
+    height: 60px;
+}
+.btn {
+    height: 36px;
+    position: relative;
+    padding: 5px 15px;
+    background-color: #f8f9fa;
+    border: 1px solid #f8f9fa;
+    font-family: arial,sans-serif;
+    font-size: 14px;
+    color: #5f6368,;
+}
+.btn:hover {
+    border: 1px solid #f2f2f2 ;
+    border-radius: 5px;
+    box-shadow: 0px 10px 15px -3px rgba(0,0,0,0.1);
+}
+
+footer {
+    height: 40px;
+    width: 100%;
+    background-color: #f2f2f2;
+    position:fixed;
+    bottom: 0px;
+    right: 0px;
+    float: left;
+}
+.div-footer-left {
+    width: 33%;
+    height: 100%;
+   display: inline-block;
+    
+
+}
+.div-footer-right {
+    width: 15%;
+    height: 100%;
+    display: inline-block;
+  
+    
+
+}
+.ortala {
+    display: inline-block;
+    width: 51%;
+}

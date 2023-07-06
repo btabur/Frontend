@@ -1,0 +1,174 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+    <!--
+        form etiketleri 
+        <input type ="text">
+        <input type ="password">
+        <input type ="email">
+        <input type ="checkbox">
+        <input type ="radio">
+        <input type ="file">
+        <input type ="reset"> 
+        <input type ="submit"> 
+        <input type ="url"> 
+        <input type ="range"> 
+        <input type ="mounth">
+        <input type ="week">
+        <input type ="time">
+          <input type ="datetime-local">
+
+        <textarea id ="w3review" name= "w3review" rows="4" cols="50">  kullanıcının yorum yapabileceği alan açar.
+
+        label etiketi verildiğinde yazıya tıklandığında  imleç doldurulacak alana otamatik geçer
+        readonly: sadece okunabilir yapar .
+    
+             
+    -->
+
+    <form oninput="cikti.value=deger.value">
+        <label>Sayı Aralığı</label> <br>
+        <input type="range" value="0" min="0" max="100" name="deger">
+        <input type="output" value="0" name="cikti">
+    </form>
+    <hr>
+
+    <form>
+        
+       <input type="text" placeholder="İsim"> <br><br>
+       <input type="password" placeholder="Şifreniz"><br><br>
+       <input type="email" placeholder="E mail"> <br><br>
+        Hangi dersi Seversiniz <br>
+       <input type="checkbox" > Matematik <br>
+        <input type="checkbox"> Türkçe <br> <br>
+
+        İçecekler <br>
+        <select>  <!-- AÇILIR LİSTE-->
+            <option value="Çay">Çay</option>
+            <option value="Kahve">Kahve</option>
+            <option value="Limonata">Limonata</option>
+        </select> <br>
+
+        Cinsiyetiniz <br>
+        <input type="radio" name="cinsiyet" checked="true"> Kadın <br> <!-- kadın seçili gelmesi için-->
+        <input type="radio" name="cinsiyet"> Erkek <br>
+    
+       <!-- radioların name değerleri aynı ise bir değer seçildiğinde diğer değer seçilemez -->
+      
+       <textarea name="mesajinput" id="masajAlani" cols="30" rows="10"></textarea> <br>
+       
+       
+       Dosya seçiniz : <input type="file"> <br><br>
+       <input type="submit" value="Kaydet"> <br> <br>
+       <input type="reset" value="Temizle">
+
+
+
+
+
+
+    </form>
+
+    <hr>
+
+    <form>
+
+        <table>
+            <tr> 
+                <td>Adınız</td>
+                <td><input type="text"></td>
+            </tr>
+            <tr>
+                <td>Soyadınız</td>
+                <td><input type="text"></td>
+            </tr>
+            <tr>
+                <td>Email</td>
+                <td><input type="email"></td>
+            </tr>
+            <tr>
+                <td>Şifre</td>
+                <td><input type="password"></td>
+            </tr>
+            <tr>
+                <td>Cinsiyetiniz: </td>
+                <td>
+                   Erkek <input type="radio" name="CinsRadio"> 
+                   Kadın <input type="radio" name="CinsRadio"> 
+                </td>
+
+            </tr>
+            <tr>
+                <td>Doğum Tarihiniz:
+                    <td><input type="date"></td>
+                </td>
+            </tr>
+            <tr>
+                <th colspan="2"> Hobileriniz</th>
+            </tr>
+            <tr>
+                <td>Kitap Okumak</td>
+                <td><input type="checkbox"></td>
+            </tr>
+            <tr>
+                <td>Spor Yapmak</td>
+                <td><input type="checkbox"></td>
+            </tr>
+            <tr>
+                <td>Enstrüman Çalmak</td>
+                <td><input type="checkbox"></td>
+            </tr>
+            <tr>
+                <td colspan="2"> <input type="file"></td>
+            </tr>
+            <tr>
+                <td colspan="2"> <textarea name="" id="" cols="30" rows="10" placeholder="Mesajınız"></textarea></dr>
+        
+            </tr>
+            <tr>
+                <td>Onaylıyorum<input type="radio" name="sozlesmaRadio"></td>
+            </tr>
+            <tr>
+                <td>Onaylamıyorum <input type="radio" name="sozlesmaRadio"></td>
+            </tr>
+            <tr>
+                <td colspan="2">
+                    <input type="submit" value="Gönder"> 
+                    <input type="submit" value="Temizle">
+                </td>
+               
+               
+            </tr>
+
+        </table>
+    </form>
+
+    <hr>
+
+    <form>
+
+        <fieldset>  <!-- formun etrafına bir çerçeve oluşturur-->
+            <legend>Giriş Kısmı</legend>  <!-- oluşan çerçeveye eklenir-->
+            <label for="mail">Email</label> <br>
+            <input type="email" id="mail"> <br>
+    
+            <label for="sifre">Şifre</label> <br>
+            <input type="password" id="sifre"> <br> <br> <!-- Verilen id nin label da belirtilmesi lazım-->
+
+            <input type="submit">
+        </fieldset>
+      
+
+    </form>
+
+</body>
+
+</html>

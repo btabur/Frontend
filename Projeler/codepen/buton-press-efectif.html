@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        
+        body {
+            display: flex;
+            align-items: center;
+        }
+        button {
+            width: 250px;
+            height: 40px;
+            background-color: lightseagreen;
+            margin: auto;
+            margin-top: 20px;
+            border: none;
+            border-radius: 20px;
+            box-shadow: 5px 5px  gray;
+           
+
+
+        }
+        button:active {
+            animation-name: press;
+            animation-duration: .3s;
+            
+        }
+        @keyframes press {
+            100% {
+                box-shadow: none;
+                transform: translateY(5px);
+                transform: translateX(5px);
+            }
+        }
+    </style>
+</head>
+<body>
+    
+    <button>OK</button>
+</body>
+</html>

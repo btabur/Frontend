@@ -1,0 +1,102 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        div {
+            display: flex;
+        }
+      .ana {
+        width: 100%;
+        height: 150px;
+        display: flex;
+        background-color: red;
+        margin: 40px 20px;
+      }
+      .ana1{
+        justify-content: space-between;  /* Aralarını mümkün olduğunca boş bırakır */
+      }
+      .ana2 {
+        justify-content: space-around; /* kenarlara 1 aralarında 2 birimlik boşluk bırakır */
+        justify-content: space-evenly; /* kenarlara 1 aralarında 1 birimlik boşluk bırakır */
+
+      }
+      .ana3 {
+        justify-content: center;  /* yatay hizalama */
+        align-items: center; /* dikey hizalama */
+        align-items: baseline; /* yazıya göre hizalama */
+        align-content: center;  /*aling items gibidavranır. daha iyidir. kutular arası boşluklar kontrol edebiliriz */
+      }
+      .ana4 {
+        flex-wrap: wrap; /* yer olursa yan yana yoksa altına geç anlamında  */
+      }
+      .div1 {
+        width: 100px;
+       
+        margin: 10px;
+        background-color: lightblue;
+        padding: 10px;
+      }
+      .ana5 {
+        height: 200px;
+        flex-wrap: wrap;
+        align-items: flex-end; /* altındaki elemanları kapladığı yer kadar alta sıralar */
+         align-content: flex-end; /*altındaki elemanları verilen boşluğu koruyarak alta sıralar */ 
+      }
+      .ana1:nth-child(1){
+        align-self: center; /*elementin kendisini ortalar */
+        order: 1; /* nasıl sıralananağını belirler */
+        flex-grow: 1; /* öğenin genişliğini % olarak kontrol edebiliriz.*/
+
+      }
+    </style>
+</head>
+<body>
+    <div class="ana1 ana">
+        <div class="div3">Burasi div 3</div>
+        <div class="div4">Burasi div 4</div>
+        <div class="div5">Burasi div 5</div>
+    </div>
+
+    <div class="ana2 ana">
+        <div class="div10">Burasi div 10</div>
+        <div class="div11">Burasi div 11</div>
+        <div class="div12">Burasi div 12</div>
+    </div>
+
+    <div class="ana3 ana">
+        <div class="div10">Burasi div 10</div>
+        <div class="div11">Burasi div 11</div>
+        <div class="div12">Burasi div 12</div>
+    </div>
+
+    <div class="ana4 ana">
+        <div class="div10">Burasi div 10</div>
+        <div class="div11">Burasi div 11</div>
+        <div class="div12">Burasi div 12</div>
+        <div class="div10">Burasi div 10</div>
+        <div class="div11">Burasi div 11</div>
+        <div class="div12">Burasi div 12</div>
+    </div>
+    
+    <div class="ana5 ana">
+        <div class="div1">Burasi div 10</div>
+        <div class="div1">Burasi div 11</div>
+        <div class="div1">Burasi div 12</div>
+        <div class="div1">Burasi div 10 Lorem ipsum dolor sit.</div>
+        <div class="div1">Burasi div 11</div>
+        <div class="div1">Burasi div 12 Lorem ipsum dolor sit.</div>
+    </div>
+    
+    <div class="ana6 ana">
+        <div class="div1">Burasi div 10</div>
+        <div class="div1">Burasi div 11</div>
+        <div class="div1">Burasi div 12</div>
+        <div class="div1">Burasi div 10 Lorem ipsum dolor sit.</div>
+        <div class="div1">Burasi div 11</div>
+        <div class="div1">Burasi div 12 Lorem ipsum dolor sit.</div>
+    </div>
+</body>
+</html>

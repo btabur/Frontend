@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+
+    <style>
+        /* akıllı seçiciler */
+
+        /*  
+        [özellik^=deger ] elementin başaldığı karakter grubunu belirler
+        [özellik$=deger ] elementin bittiği karakter grubunu belirler
+        [özellik *= deger] elementin içinde yer alan karakteri tespit eder
+
+        */
+        p[class^="ba"] {
+            background-color: green;
+        }
+        [id$="in"] {
+            color: red;
+        }
+        [src*="photo"] {
+            border: 5px solid blue;
+        }
+
+    </style>
+</head>
+<body>
+
+    <img src="https://picsum.photos/200/300" alt="lorem image">
+    <p class="baslik">Lorem ipsum dolor sit, amet consectetur adipisicing elit. Vel, corrupti?</p>
+    <p id="metin">Lorem, ipsum dolor sit amet consectetur adipisicing elit. Quod, officiis.</p>
+    
+</body>
+</html>
